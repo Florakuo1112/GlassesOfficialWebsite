@@ -1,4 +1,60 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  background:$primary;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include mobile{
+    padding-top: 12px;
+    padding-bottom: 0px;
+  }
+
+  .container{
+    display: flex; 
+    justify-content: space-between;
+    @include mobile{
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  img{
+    vertical-align: middle;
+    width: 80px;
+    @include mobile{
+      padding-left: 15px;
+      padding-bottom: 12px;
+    }
+    
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+    li{
+      color: #fff;
+      font-size: 20px;
+      line-height: 50px;
+      vertical-align: middle;
+      a{
+        color:#fff;
+      };
+
+      @include mobile{
+        box-sizing: border-box;
+        width: 50%;
+        text-align: center;
+        border: 1px solid white;
+      }
+    }
+    @include pad (){
+      width: 70%;
+    }
+    @include mobile{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+  }
+  
 }

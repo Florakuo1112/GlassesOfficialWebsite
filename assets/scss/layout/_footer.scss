@@ -1,4 +1,137 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background:$primary;
+  .contactArea{
+    @include mobile{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      border-bottom: 1px solid #fff
+    }
+  }
+  .footerLink{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    @include mobile{
+      padding-top: 24px;
+    }
+    .index{
+      width: 35%;
+      display: flex;
+      justify-content: space-between;
+      li{
+        font-size: 16px;
+        line-height: 48px;
+        color: #fff;
+        a{
+          color:white;
+        }
+        
+        
+      }
+      @include pad{
+        width: 66%;
+      }
+
+      @include mobile{
+        display: none;
+      }
+    }
+    .socialMedia{
+      display: flex;
+      justify-content: space-between;
+      width: 16%;
+      @include pad{
+        width: 20%;
+      }
+      @include mobile{
+        width: 100%;
+        img{
+          width: 24px;
+          margin-left: 8px;
+        }
+        display: flex;
+        justify-content: space-between; 
+      }
+
+    }
+    
+  }
+  margin-bottom: 24px;
+
+  .contact{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #fff;
+    @include mobile{
+      border-bottom: none;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    li{
+      font-size: 36px;
+      line-height: 1.5;
+      color: white;
+      @include mobile{
+        font-size: 16px;
+      }
+    }
+
+    span{
+      font-size: 36px;
+      line-height: 1.5;
+      vertical-align: middle;
+      margin-right: 22px;
+      @include mobile{
+        font-size: 16px;
+      }
+      
+    }
+  }
+
+  .warranty{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    
+    p{
+      color: white;
+      font-size: 16px;
+      line-height: 1.5;
+      @include mobile{
+        margin-bottom: 8px;
+      }
+    }
+
+    @include mobile{
+      flex-direction: column;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .statement{
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      a{
+        color:#fff;
+        font-size: 14px;
+        @include mobile{
+          margin-bottom: 8px;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+      @include pad{
+        width: 25%;
+      }
+
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+
+
+  }
 }

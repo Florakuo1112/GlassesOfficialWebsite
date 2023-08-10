@@ -1,0 +1,312 @@
+//optical
+.navBar{
+    .container{
+        @include pad{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    ul{
+        display: flex;
+        li{
+            box-sizing: border-box;
+            height: 96px;
+            width: 33.333%;
+            text-align: center;
+            padding-top: 24px;
+            font-size: 32px;
+            line-height: 1.5;
+            border: 1px solid #dcdcdc;
+            &:hover{
+                box-sizing: border-box;
+                border-bottom: 8px solid $primary;
+            }
+            @include pad{
+                font-size: 24px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                height: 68px;
+
+            }
+            @include mobile{
+                font-size: 16px;
+                height: 56px;
+            }
+        }
+    }
+}
+
+.coverOptical{
+    display: flex;
+    img{
+        width: 50%;
+    }
+    .productHeaderSM{
+        display: none;
+        @include pad{
+            display: block;
+        }
+    }
+
+    .productHeaderPC{
+        @include pad{
+            display: none;
+        }
+    }
+}
+
+.product{
+    .series{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @include mobile{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        h3{
+            text-align: center;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+        .notes{
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 32px;
+            @include mobile{
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                width: 24%;
+                margin-bottom: 80px;
+                @include pad{
+                    width: 49%;
+                    margin-bottom: 40px;
+                }
+                @include mobile{
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+
+            }
+            .model{
+                display: flex;
+                justify-content: space-between;
+                h4{
+                    font-weight: normal;
+                }
+                .price{
+                    color:$primary ;
+                }
+            }
+        }
+
+    }
+
+    .colorOption{
+        display: flex;
+    }
+
+    .black{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: #000;
+        border-radius: 4px;
+        margin-right: 4px;
+    }
+
+    .red{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: #B75929;
+        border-radius: 4px;
+    }
+}
+
+.pageIndex{
+    padding-bottom: 80px;
+    @include pad{
+        padding-bottom: 80px;
+    }
+    @include mobile{
+        padding-bottom: 64px;
+    }
+    a{
+        color: #555555;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border: 1px solid #F2F2F2;
+            font-size: 18px;
+            line-height: 1.5;
+            &:hover{
+                background:#000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//blog
+
+.navBarBlog{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: $secondary;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            width: 35%;
+            justify-content: space-between;
+            @include pad{
+                width: 72%;
+            }
+            a{
+                color: #fff;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+        span{
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}
+.blog{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include pad{
+        padding-top: 80px;
+        padding-bottom: 56px;
+    }
+    @include mobile{
+        padding-top: 40px;
+    }
+    h2{
+    
+     box-sizing: border-box;
+     padding-left: 12px;
+     border-left: 8px solid $primary;
+     margin-bottom: 32px;
+     @include pad{
+         margin-bottom: 40px;
+     }
+     @include mobile{
+         margin-bottom: 24px;
+     }
+    }
+
+    .article{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            flex-wrap: wrap;
+        }
+        img{
+            width: 49%;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .essay{
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include pad{
+                display: block;
+            }
+            @include mobile{
+                width: 100%;
+            }
+            h4{
+                color:$secondary ;
+                font-size: 32px;
+                line-height: 1.5;
+                font-weight: normal;
+                @include pad{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    margin-top: 4px;
+                }
+            }
+
+            .englishName{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                @include pad{
+                    margin-bottom: 4px;
+                    font-weight: bold;
+                }
+                @include mobile{
+                    margin-bottom: 0px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    @include pad{
+                        font-size: 16px;
+                    }
+                }
+                .launchDates{
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+
+            .content{
+                color: #555555;
+                font-size: 20px;
+                line-height: 1.5;
+                @include pad{
+                    font-size: 16px;
+                }
+                @include mobile{
+                    display:  none;
+                }
+                span{
+                    display: none;
+                    @include pad{
+                        display: inline;
+                    }
+                }
+            }
+
+            .more{
+                text-align: end;
+                font-size: 36px;
+                line-height: 1.5;
+                font-weight: bold;
+                color: $secondary;
+                @include pad{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
