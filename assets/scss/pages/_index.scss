@@ -307,9 +307,13 @@ ul{
   .inputArea{
     width: 49%;
     margin: 0 auto;
-    p{
-      margin-bottom: 12px;
-    }
+    margin-bottom: 80px;
+    
+      p{
+        line-height: 1.5;
+        margin-bottom: 8px;
+      }
+    
 
     @include pad{
       width: 82%;
@@ -343,19 +347,25 @@ ul{
    }
   }
 
-  .submit{
-    display: block;
+  .submitBtn{
     margin: 0 auto;
     width: 416px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     background-color: $primary;
-    text-align: center;
-    color: #fff;
     margin-top: 48px;
     border: 1px solid transparent;
+    margin-bottom: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     @include mobile{
       width: 100%;
+    }
+
+    input{
+      border: none;
+      margin-bottom: 0px;
+      font-size: 16px;
+      color: white;
+
     }
   }
 }
