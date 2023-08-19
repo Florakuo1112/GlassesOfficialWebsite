@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>blog</title>
 
+       <!-- annimated -->
+       <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+   
+     <!-- AOS -->
+   
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- 字體 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,17 +34,18 @@
           <li><a href="">鏡框小知識</a></li>
         </ul>
 
-        <span class="material-symbols-outlined">
+        <a href="#"><span class="material-symbols-outlined">
           search
           </span>
+        </a>
 
       </div>
     </div>
   <div class="blog">
     <div class="container">
-      <h2>部落格</h2>
+      <h2 data-aos="fade-down"    data-aos-delay="50" >部落格</h2>
 
-      <div class="article">
+      <div class="article" data-aos="fade-down"  >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true" alt="">
         <div class="essay">
           <div>
@@ -53,7 +64,7 @@
         </div>
       </div>
 
-      <div class="article">
+      <div class="article" data-aos="fade-down" >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true" alt="">
         <div class="essay">
           <div>
@@ -72,7 +83,7 @@
         </div>
       </div>
 
-      <div class="article">
+      <div class="article" data-aos="fade-down" >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true" alt="">
         <div class="essay">
           <div>
@@ -91,7 +102,7 @@
         </div>
       </div>
 
-      <div class="article">
+      <div class="article" data-aos="fade-down" >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true" alt="">
         <div class="essay">
           <div>
@@ -110,7 +121,7 @@
         </div>
       </div>
 
-      <div class="article">
+      <div class="article" data-aos="fade-down" >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true" alt="">
         <div class="essay">
           <div>
@@ -147,5 +158,10 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- 一定要加 -->
+        <script>
+          AOS.init();
+        </script>
   </body>
 </html>

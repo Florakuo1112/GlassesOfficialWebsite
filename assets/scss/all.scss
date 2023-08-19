@@ -12,12 +12,21 @@
 @import './pages/pages.scss';
 
 body{
-font-family: 'Roboto', sans-serif;
-font-family: 'Noto Sans TC', sans-serif;
+font-family: 'roboto',Noto Sans TC, sans-serif;
+*, ::before, ::after {
+    box-sizing: border-box;
+   }
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 .container{
-    max-width: 1296px;
+    max-width: 1320px;
+    padding: 0 12px;
     margin: 0 auto;
     
     @include pad{

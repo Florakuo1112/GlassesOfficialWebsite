@@ -1,4 +1,10 @@
+@keyframes rotate {
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(720deg);}
+}
+
 .cover{
+
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,6 +13,7 @@
     height: 369px;
   }
   h3{
+    color: $secondary;
     font-size:36px;
     line-height: 1.5;
     @include mobile{
@@ -31,7 +38,7 @@
     line-height: 1.5;
     color: #fff;
     padding: 6px 12px 6px 12px;
-    width: 80px;
+    width: 104px;
 
 
   }
@@ -46,12 +53,15 @@
   
   }
 
-  .title{
+  
 
+  .title{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: flex-end;  }
+    align-items: flex-end;
+   
+     }
 
     
   }
@@ -105,6 +115,13 @@
         width: 100%;
       }
     }
+  }
+
+  .clock{
+animation-name:rotate;
+animation-duration: 8s;
+animation-delay:1s;
+animation-iteration-count: infinite;
   }
 }
 
@@ -327,6 +344,12 @@ ul{
     
      
    }
+
+   .comment{
+     height: 136px;
+   }
+
+   
 
    .checkbox{
      width: 20px;

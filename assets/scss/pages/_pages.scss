@@ -226,6 +226,7 @@
         }
         img{
             width: 49%;
+            object-fit: cover;
             @include mobile{
                 width: 100%;
             }
